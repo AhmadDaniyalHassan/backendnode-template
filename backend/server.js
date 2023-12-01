@@ -11,6 +11,7 @@ const colors = require("colors");
 // Create an Express app
 const app = express();
 
+
 // Middleware setup
 app.use(bodyParser.json());
 app.use(cors());
@@ -22,6 +23,8 @@ app.get("/", (req, res) => {
 
 // Set the port for the server
 const port = process.env.PORT || 3000;
+
+
 
 // Start the server
 app.listen(port, () => {
